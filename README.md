@@ -26,10 +26,10 @@ You can click the Preview link to take a look at your changes.
 
 <h2>🔧 Technologies & Tools</h2>
 <p align="center">
-<a href="https://google.com">  <img src="https://img.shields.io/badge/Code-JavaScript-blue?style=flat&logo=javascript" alt="JavaScript"></a>
-  <img src="https://img.shields.io/badge/Code-Node.js-blue?style=flat&logo=node.js" alt="Node.js">
-  <img src="https://img.shields.io/badge/Code-PHP-blue?style=flat&logo=php" alt="PHP">
-  <img src="https://img.shields.io/badge/Code-C++-blue?style=flat&logo=cplusplus" alt="C++">
+<a href="https://github.com/victorsantos-jobs/nodejs">  <img src="https://img.shields.io/badge/Code-JavaScript-blue?style=flat&logo=javascript" alt="JavaScript"></a>
+ <a href="https://github.com/victorsantos-jobs/nodejs"> <img src="https://img.shields.io/badge/Code-Node.js-blue?style=flat&logo=node.js" alt="Node.js"></a>
+ <a href="https://github.com/victorsantos-jobs/php"><img src="https://img.shields.io/badge/Code-PHP-blue?style=flat&logo=php" alt="PHP"></a>
+<a href="https://github.com/victorsantos-jobs/c-cpp">  <img src="https://img.shields.io/badge/Code-C++-blue?style=flat&logo=cplusplus" alt="C++"></a>
 </p>
 
 <h2>📘 My Coding Journey</h2>
