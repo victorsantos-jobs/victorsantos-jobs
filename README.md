@@ -26,7 +26,7 @@ You can click the Preview link to take a look at your changes.
 
 <h2>🔧 Technologies & Tools</h2>
 <p align="center">
-  <img src="https://img.shields.io/badge/Code-JavaScript-blue?style=flat&logo=javascript" alt="JavaScript">
+<a href="https://google.com">  <img src="https://img.shields.io/badge/Code-JavaScript-blue?style=flat&logo=javascript" alt="JavaScript"></a>
   <img src="https://img.shields.io/badge/Code-Node.js-blue?style=flat&logo=node.js" alt="Node.js">
   <img src="https://img.shields.io/badge/Code-PHP-blue?style=flat&logo=php" alt="PHP">
   <img src="https://img.shields.io/badge/Code-C++-blue?style=flat&logo=cplusplus" alt="C++">
