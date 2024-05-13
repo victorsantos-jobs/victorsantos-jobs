@@ -47,6 +47,8 @@ You can click the Preview link to take a look at your changes.
 
 <p>Feel free to check out some of my favorite projects:</p>
 
+ -  MVC | NestJS | SQL
+
 - [NodeJS](https://github.com/victorsantos-jobs/nodejs) - A Node.js backend application.
 - [C++](https://github.com/victorsantos-jobs/c-cpp) - A complex algorithm implemented in C++.
 - [Front-end](https://github.com/victorsantos-jobs/html-css-javascript-bootstrap-tailwindcss) - A dynamic website built with JavaScript.
