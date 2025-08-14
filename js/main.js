@@ -285,7 +285,7 @@ class PortfolioApp {
         const projects = [
             {
                 title: "E-commerce Platform",
-                description: "Plataforma completa de e-commerce com React e Node.js",
+                description: "Complete e-commerce platform with React and Node.js",
                 image: "https://via.placeholder.com/400x250",
                 category: "fullstack",
                 technologies: ["React", "Node.js", "MongoDB", "Stripe"],
@@ -293,8 +293,8 @@ class PortfolioApp {
                 demo: "https://demo.example.com"
             },
             {
-                title: "Dashboard Analytics",
-                description: "Dashboard interativo para análise de dados com gráficos dinâmicos",
+                title: "Analytics Dashboard",
+                description: "Interactive dashboard for data analysis with dynamic charts",
                 image: "https://via.placeholder.com/400x250",
                 category: "frontend",
                 technologies: ["Vue.js", "Chart.js", "TypeScript"],
@@ -302,8 +302,8 @@ class PortfolioApp {
                 demo: "https://demo.example.com"
             },
             {
-                title: "API RESTful",
-                description: "API robusta para aplicações mobile com autenticação JWT",
+                title: "RESTful API",
+                description: "Robust API for mobile applications with JWT authentication",
                 image: "https://via.placeholder.com/400x250",
                 category: "backend",
                 technologies: ["PHP", "Laravel", "MySQL", "JWT"],
@@ -311,8 +311,8 @@ class PortfolioApp {
                 demo: "https://demo.example.com"
             },
             {
-                title: "Sistema de Chat",
-                description: "Aplicação de chat em tempo real com Socket.io",
+                title: "Real-time Chat System",
+                description: "Real-time chat application with Socket.io",
                 image: "https://via.placeholder.com/400x250",
                 category: "fullstack",
                 technologies: ["React", "Socket.io", "Express", "Redis"],
@@ -320,8 +320,8 @@ class PortfolioApp {
                 demo: "https://demo.example.com"
             },
             {
-                title: "Landing Page Moderna",
-                description: "Landing page responsiva com animações avançadas",
+                title: "Modern Landing Page",
+                description: "Responsive landing page with advanced animations",
                 image: "https://via.placeholder.com/400x250",
                 category: "frontend",
                 technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
@@ -329,8 +329,8 @@ class PortfolioApp {
                 demo: "https://demo.example.com"
             },
             {
-                title: "Microserviços API",
-                description: "Arquitetura de microserviços com Docker e Kubernetes",
+                title: "Microservices API",
+                description: "Microservices architecture with Docker and Kubernetes",
                 image: "https://via.placeholder.com/400x250",
                 category: "backend",
                 technologies: ["Node.js", "Docker", "Kubernetes", "PostgreSQL"],
@@ -521,7 +521,7 @@ class PortfolioApp {
             const originalText = submitButton.innerHTML;
 
             // Show loading state
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
             submitButton.disabled = true;
 
             try {
@@ -529,11 +529,11 @@ class PortfolioApp {
                 await new Promise(resolve => setTimeout(resolve, 2000));
                 
                 // Success feedback
-                this.showNotification('Mensagem enviada com sucesso!', 'success');
+                this.showNotification('Message sent successfully!', 'success');
                 contactForm.reset();
             } catch (error) {
                 // Error feedback
-                this.showNotification('Erro ao enviar mensagem. Tente novamente.', 'error');
+                this.showNotification('Error sending message. Please try again.', 'error');
             } finally {
                 // Reset button
                 submitButton.innerHTML = originalText;
