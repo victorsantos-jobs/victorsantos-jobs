@@ -1,235 +1,336 @@
 
-# 🚀 Victor Santos - Portfólio Profissional
+# 🚀 Task Manager API - Backend Profissional
 
-<div align="center">
-
-![Portfolio](https://img.shields.io/badge/Portfolio-Professional-blue?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-2.0-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
-
-**Portfólio moderno e responsivo desenvolvido com as melhores práticas de desenvolvimento web**
-
-[🌐 Demo](https://victorsantosjobs.netlify.app) | [📧 Contato](mailto:victorsantos@email.com) | [💼 LinkedIn](https://www.linkedin.com/in/victorsantosjobs/)
-
-</div>
+Uma API REST moderna e robusta para gerenciamento de tarefas e projetos, construída com Node.js, Express, MongoDB e funcionalidades avançadas de segurança e autenticação.
 
 ## ✨ Características Principais
 
-### 🎨 **Design Moderno**
-- **Dark Theme** elegante e profissional
-- **Design System** completo com variáveis CSS customizadas
-- **Animações fluidas** e micro-interações
-- **Interface responsiva** mobile-first
+- 🔐 **Autenticação JWT** com verificação de email
+- 👥 **Sistema de Roles** (Admin, Manager, User)
+- 📋 **Gestão Completa de Tarefas** com status, prioridades e dependências
+- 🚀 **Gestão de Projetos** com equipes, marcos e riscos
+- 📂 **Categorização** inteligente de tarefas
+- 📊 **Dashboard e Estatísticas** em tempo real
+- 📧 **Sistema de Emails** para notificações
+- 📁 **Upload de Arquivos** com validação
+- 🛡️ **Segurança Avançada** com rate limiting, CORS e validações
+- 📱 **API RESTful** com documentação completa
+- 🧪 **Testes** e scripts de seed
+- 🚀 **Performance** otimizada com índices e agregações
 
-### ⚡ **Performance Otimizada**
-- **Loading Screen** animado
-- **Lazy Loading** para imagens e recursos
-- **Particles System** Canvas para background interativo
-- **Smooth Scrolling** e navegação fluida
+## 🛠️ Tecnologias Utilizadas
 
-### 🛠️ **Tecnologias Utilizadas**
+- **Backend**: Node.js, Express.js
+- **Banco de Dados**: MongoDB com Mongoose
+- **Autenticação**: JWT, bcryptjs
+- **Validação**: express-validator
+- **Segurança**: helmet, cors, rate-limiting
+- **Upload**: multer
+- **Emails**: nodemailer
+- **Logs**: morgan
+- **Compressão**: compression
 
-#### Frontend
-- **HTML5** semântico e acessível
-- **CSS3** moderno com CSS Grid e Flexbox
-- **JavaScript ES6+** vanilla (sem frameworks)
-- **Bootstrap 5** para responsividade
-- **Font Awesome** para ícones
-
-#### Recursos Avançados
-- **CSS Custom Properties** (variáveis CSS)
-- **Intersection Observer API** para animações no scroll
-- **Canvas API** para sistema de partículas
-- **Progressive Web App** ready
-
-## 🏗️ Arquitetura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
-victorsantos-jobs/
-├── index.html              # Página principal
-├── css/
-│   ├── bootstrap.min.css   # Framework CSS
-│   └── style.css          # Estilos customizados
-├── js/
-│   ├── bootstrap.bundle.min.js
-│   └── main.js            # Funcionalidades principais
-├── images/                # Assets visuais
-│   ├── eu-foto.png
-│   ├── backend.gif
-│   ├── frontend.gif
-│   └── fundo.jpg
-└── src/
-    └── building.html      # Página em construção
+task-manager-api/
+├── models/                 # Modelos do MongoDB
+│   ├── User.js           # Modelo de usuário
+│   ├── Task.js           # Modelo de tarefa
+│   ├── Category.js       # Modelo de categoria
+│   └── Project.js        # Modelo de projeto
+├── routes/                # Rotas da API
+│   ├── auth.js           # Autenticação
+│   ├── users.js          # Gestão de usuários
+│   ├── tasks.js          # Gestão de tarefas
+│   ├── categories.js     # Gestão de categorias
+│   └── projects.js       # Gestão de projetos
+├── middleware/            # Middlewares
+│   ├── auth.js           # Autenticação e autorização
+│   ├── errorHandler.js   # Tratamento de erros
+│   └── notFound.js       # Rotas não encontradas
+├── utils/                 # Utilitários
+│   ├── errorResponse.js  # Classe de erro personalizada
+│   ├── tokenResponse.js  # Resposta de token JWT
+│   ├── sendEmail.js      # Envio de emails
+│   └── fileUpload.js     # Upload de arquivos
+├── scripts/               # Scripts utilitários
+│   └── seed.js           # População do banco
+├── uploads/               # Arquivos enviados
+├── server.js              # Servidor principal
+├── package.json           # Dependências
+└── env.example            # Variáveis de ambiente
 ```
 
-## 🎯 Seções do Portfólio
+## 🚀 Instalação e Configuração
 
-### 🏠 **Hero Section**
-- Animação de typewriter com múltiplas profissões
-- Sistema de partículas interativo no background
-- Call-to-actions estratégicos
-- Links para redes sociais
+### 1. Pré-requisitos
 
-### 👨‍💻 **Sobre Mim**
-- Biografia profissional
-- Estatísticas de carreira (projetos, anos de experiência, tecnologias)
-- Simulador de código interativo
-- Botões para CV e artigos
+- Node.js (versão 16 ou superior)
+- MongoDB (local ou Atlas)
+- Git
 
-### 🛠️ **Skills & Tecnologias**
-- Organização por categorias (Frontend, Backend, Ferramentas)
-- Barras de progresso animadas
-- Níveis de proficiência em cada tecnologia
-- Efeitos visuais de hover
+### 2. Clone o repositório
 
-### 💼 **Projetos em Destaque**
-- Sistema de filtros por categoria
-- Grid responsivo de projetos
-- Links para GitHub e demonstrações
-- Tags de tecnologias utilizadas
-
-### 📞 **Contato**
-- Formulário funcional com validação
-- Sistema de notificações
-- Informações de contato organizadas
-- Integração com redes sociais
-
-## 🚀 Funcionalidades Interativas
-
-### 🎬 **Animações**
-- **Fade In Up** para elementos ao fazer scroll
-- **Typewriter Effect** no título principal
-- **Floating Animation** na foto de perfil
-- **Shimmer Effect** nas barras de progresso
-- **Parallax** no background
-
-### ⚙️ **JavaScript Features**
-- **Smooth Scrolling** entre seções
-- **Active Link Highlighting** na navegação
-- **Particles System** no Canvas
-- **Form Validation** e feedback
-- **Responsive Navbar** com backdrop blur
-- **Loading Screen** com animação
-
-### 📱 **Responsividade**
-- **Mobile First** approach
-- **Breakpoints customizados** para diferentes dispositivos
-- **Touch-friendly** interfaces
-- **Optimized Performance** em dispositivos móveis
-
-## 🎨 Design System
-
-### 🎨 **Paleta de Cores**
-```css
---primary-color: #667eea     /* Azul principal */
---primary-dark: #5a67d8      /* Azul escuro */
---accent-color: #f093fb      /* Rosa accent */
---bg-primary: #0f172a        /* Background principal */
---bg-secondary: #1e293b      /* Background secundário */
---text-primary: #f1f5f9      /* Texto principal */
-```
-
-### 📝 **Tipografia**
-- **Primary Font**: Inter (Google Fonts)
-- **Monospace**: JetBrains Mono
-- **Scales**: Modular typography scale
-- **Line Heights**: Otimizado para leitura
-
-### 🔄 **Transições**
-- **Fast**: 0.15s ease-out
-- **Normal**: 0.3s ease-out
-- **Slow**: 0.5s ease-out
-
-## 📈 **SEO & Acessibilidade**
-
-### 🔍 **SEO Otimizado**
-- Meta tags completas
-- Open Graph protocol
-- Structured data
-- Alt texts em imagens
-- Semantic HTML
-
-### ♿ **Acessibilidade**
-- **WCAG 2.1** compliance
-- **Keyboard navigation**
-- **Screen reader** friendly
-- **Focus indicators**
-- **Color contrast** otimizado
-
-## 🔧 **Como Executar**
-
-1. **Clone o repositório**
 ```bash
-git clone https://github.com/victorsantos-jobs/victorsantos-jobs.git
-cd victorsantos-jobs
+git clone <repository-url>
+cd task-manager-api
 ```
 
-2. **Abra o projeto**
+### 3. Instale as dependências
+
 ```bash
-# Servidor local simples
-python -m http.server 8000
-# ou
-npx serve .
+npm install
 ```
 
-3. **Acesse no navegador**
+### 4. Configure as variáveis de ambiente
+
+```bash
+cp env.example .env
 ```
-http://localhost:8000
+
+Edite o arquivo `.env` com suas configurações:
+
+```env
+# Configurações do Servidor
+PORT=5000
+NODE_ENV=development
+
+# MongoDB
+MONGODB_URI=mongodb://localhost:27017/task-manager
+MONGODB_URI_PROD=mongodb+srv://username:password@cluster.mongodb.net/task-manager
+
+# JWT
+JWT_SECRET=your-super-secret-jwt-key-here
+JWT_EXPIRE=30d
+JWT_COOKIE_EXPIRE=30
+
+# Email (Gmail)
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+
+# Rate Limiting
+RATE_LIMIT_WINDOW_MS=15*60*1000
+RATE_LIMIT_MAX=100
+
+# File Upload
+MAX_FILE_SIZE=5*1024*1024
+UPLOAD_PATH=./uploads
 ```
 
-## 🚀 **Deploy**
+### 5. Inicie o MongoDB
 
-O projeto está hospedado em:
-- **Netlify**: [victorsantosjobs.netlify.app](https://victorsantosjobs.netlify.app)
-- **GitHub Pages**: Configuração automática via Actions
+```bash
+# Local
+mongod
 
-## 📊 **Performance Metrics**
+# Ou use Docker
+docker run -d -p 27017:27017 --name mongodb mongo:latest
+```
 
-- **Lighthouse Score**: 95+
-- **First Contentful Paint**: < 1.5s
-- **Time to Interactive**: < 3s
-- **Cumulative Layout Shift**: < 0.1
+### 6. Execute o script de seed (opcional)
 
-## 🛠️ **Futuras Melhorias**
+```bash
+npm run seed
+```
 
-- [ ] **Progressive Web App** completo
-- [ ] **Dark/Light Mode** toggle
-- [ ] **Internacionalização** (i18n)
-- [ ] **Blog integrado**
-- [ ] **Analytics dashboard**
-- [ ] **CMS headless** integration
+### 7. Inicie o servidor
 
-## 🤝 **Contribuições**
+```bash
+# Desenvolvimento
+npm run dev
 
-Contribuições são sempre bem-vindas! Para contribuir:
+# Produção
+npm start
+```
 
-1. Faça um fork do projeto
+## 📚 Endpoints da API
+
+### 🔐 Autenticação
+
+| Método | Endpoint | Descrição |
+|--------|----------|------------|
+| POST | `/api/auth/register` | Registrar usuário |
+| POST | `/api/auth/login` | Login |
+| GET | `/api/auth/verify/:token` | Verificar email |
+| POST | `/api/auth/forgot-password` | Esqueci a senha |
+| PUT | `/api/auth/reset-password/:token` | Resetar senha |
+| GET | `/api/auth/me` | Usuário atual |
+| PUT | `/api/auth/updatedetails` | Atualizar dados |
+| PUT | `/api/auth/updatepassword` | Alterar senha |
+| POST | `/api/auth/logout` | Logout |
+
+### 👥 Usuários
+
+| Método | Endpoint | Descrição |
+|--------|----------|------------|
+| GET | `/api/users` | Listar usuários (Admin) |
+| GET | `/api/users/:id` | Obter usuário |
+| PUT | `/api/users/:id` | Atualizar usuário |
+| DELETE | `/api/users/:id` | Deletar usuário (Admin) |
+| POST | `/api/users/:id/avatar` | Upload avatar |
+| GET | `/api/users/:id/tasks` | Tarefas do usuário |
+| GET | `/api/users/:id/stats` | Estatísticas do usuário |
+| GET | `/api/users/:id/dashboard` | Dashboard do usuário |
+| PATCH | `/api/users/:id/preferences` | Atualizar preferências |
+
+### 📋 Tarefas
+
+| Método | Endpoint | Descrição |
+|--------|----------|------------|
+| GET | `/api/tasks` | Listar tarefas |
+| GET | `/api/tasks/:id` | Obter tarefa |
+| POST | `/api/tasks` | Criar tarefa |
+| PUT | `/api/tasks/:id` | Atualizar tarefa |
+| DELETE | `/api/tasks/:id` | Deletar tarefa |
+| POST | `/api/tasks/:id/comments` | Adicionar comentário |
+| POST | `/api/tasks/:id/time-logs` | Adicionar registro de tempo |
+| POST | `/api/tasks/:id/attachments` | Upload de arquivo |
+| GET | `/api/tasks/stats/overview` | Estatísticas gerais |
+| GET | `/api/tasks/stats/by-priority` | Tarefas por prioridade |
+| GET | `/api/tasks/overdue` | Tarefas em atraso |
+| PATCH | `/api/tasks/bulk-update` | Atualização em lote |
+
+### 📂 Categorias
+
+| Método | Endpoint | Descrição |
+|--------|----------|------------|
+| GET | `/api/categories` | Listar categorias |
+| GET | `/api/categories/:id` | Obter categoria |
+| POST | `/api/categories` | Criar categoria |
+| PUT | `/api/categories/:id` | Atualizar categoria |
+| DELETE | `/api/categories/:id` | Deletar categoria |
+| GET | `/api/categories/stats/most-used` | Categorias mais usadas |
+| GET | `/api/categories/stats/overview` | Estatísticas gerais |
+| PATCH | `/api/categories/bulk-update` | Atualização em lote |
+
+### 🚀 Projetos
+
+| Método | Endpoint | Descrição |
+|--------|----------|------------|
+| GET | `/api/projects` | Listar projetos |
+| GET | `/api/projects/:id` | Obter projeto |
+| POST | `/api/projects` | Criar projeto |
+| PUT | `/api/projects/:id` | Atualizar projeto |
+| DELETE | `/api/projects/:id` | Deletar projeto |
+| POST | `/api/projects/:id/team` | Adicionar membro |
+| DELETE | `/api/projects/:id/team/:userId` | Remover membro |
+| POST | `/api/projects/:id/milestones` | Adicionar marco |
+| PATCH | `/api/projects/:id/milestones/:milestoneId/complete` | Completar marco |
+| POST | `/api/projects/:id/risks` | Adicionar risco |
+| POST | `/api/projects/:id/attachments` | Upload de arquivo |
+| GET | `/api/projects/stats/overview` | Estatísticas gerais |
+| GET | `/api/projects/stats/by-status` | Projetos por status |
+
+## 🔑 Credenciais de Teste
+
+Após executar o seed, você pode usar estas credenciais:
+
+- **Admin**: `admin@taskmanager.com` / `admin123`
+- **Manager**: `maria@taskmanager.com` / `user123`
+- **User**: `joao@taskmanager.com` / `user123`
+
+## 🧪 Testes
+
+```bash
+# Executar testes
+npm test
+
+# Executar testes em modo watch
+npm run test:watch
+```
+
+## 📊 Funcionalidades Avançadas
+
+### 🔍 Filtros e Busca
+- Filtros por status, prioridade, categoria, projeto
+- Busca por texto em título, descrição e tags
+- Ordenação por múltiplos campos
+- Paginação com limite configurável
+
+### 📈 Estatísticas e Relatórios
+- Dashboard personalizado por usuário
+- Estatísticas de tarefas por status e prioridade
+- Relatórios de progresso de projetos
+- Métricas de performance da equipe
+
+### 🚀 Gestão de Projetos
+- Sistema de marcos (milestones)
+- Gestão de riscos com probabilidade e impacto
+- Controle de orçamento estimado vs. real
+- Equipes com roles específicos
+
+### 📁 Sistema de Arquivos
+- Upload de múltiplos tipos de arquivo
+- Validação de tamanho e tipo
+- Organização por tarefa/projeto
+- Limpeza automática de arquivos órfãos
+
+### 🔔 Notificações
+- Emails automáticos para verificação
+- Reset de senha por email
+- Notificações de tarefas em atraso
+- Sistema de lembretes configurável
+
+## 🛡️ Segurança
+
+- **JWT** com expiração configurável
+- **Rate Limiting** para prevenir ataques
+- **Validação** de entrada com express-validator
+- **Sanitização** de dados
+- **CORS** configurável
+- **Helmet** para headers de segurança
+- **Compressão** para melhor performance
+
+## 🚀 Deploy
+
+### Heroku
+```bash
+heroku create
+heroku config:set NODE_ENV=production
+heroku config:set MONGODB_URI=your-mongodb-uri
+git push heroku main
+```
+
+### Docker
+```bash
+docker build -t task-manager-api .
+docker run -p 5000:5000 task-manager-api
+```
+
+### Vercel
+```bash
+vercel --prod
+```
+
+## 📝 Contribuição
+
+1. Fork o projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📝 **Licença**
+## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 📞 **Contato**
+## 👨‍💻 Autor
 
-Victor Santos - **Desenvolvedor Full Stack**
+**Victor Santos**
+- GitHub: [@victorsantos](https://github.com/victorsantos)
+- LinkedIn: [Victor Santos](https://linkedin.com/in/victorsantos)
 
-- 🌐 **Website**: [victorsantosjobs.netlify.app](https://victorsantosjobs.netlify.app)
-- 💼 **LinkedIn**: [linkedin.com/in/victorsantosjobs](https://www.linkedin.com/in/victorsantosjobs/)
-- 🐦 **Twitter**: [@victorsantosjob](https://twitter.com/victorsantosjob)
-- 📧 **Email**: victorsantos@email.com
-- 📱 **Instagram**: [@victorsantosjobs](https://www.instagram.com/victorsantosjobs)
+## 🙏 Agradecimentos
+
+- Comunidade Node.js
+- MongoDB Atlas
+- Express.js team
+- Todos os contribuidores
 
 ---
 
-<div align="center">
-
-**"Code with passion, build with purpose"** 💻✨
-
-*Feito com ❤️ por Victor Santos*
-
-</div>
+⭐ **Se este projeto te ajudou, considere dar uma estrela!**
 
