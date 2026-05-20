@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Task Manager API
+# 🚀 VICTORSANTOSJOBS
 ### Scalable • Secure • Modular • Production Ready
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=REST+API+for+Task+Management;Node.js+%7C+Express+%7C+MongoDB;Secure+Architecture+%7C+JWT+%7C+Scalable+Design" />
